@@ -1,0 +1,85 @@
+body {
+    background-image: url(../home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+p {
+    max-width: 444px;
+    margin-top: 24px;
+}
+
+.custom-container {
+    padding-top: 300px !important;
+    padding-bottom: 50px !important;
+}
+
+
+.explore {
+    background: white;
+    color: black;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.explore:hover {
+    -webkit-box-shadow: 0px 0 10px 20px rgba(150, 148, 139, 0.702), 0px 0 20px 20px rgba(131, 129, 120, 0.702), 0px 0 30px 20px rgba(147, 146, 142, 0.702), 0px 0 40px 20px rgba(136, 134, 128, 0.702), 0px 0 50px 20px rgba(231, 202, 81, 0.7019607843);
+    box-shadow: 0px 0 10px 20px rgba(135, 133, 126, 0.702), 0px 0 20px 20px rgba(141, 138, 127, 0.702), 0px 0 30px 20px rgba(149, 149, 146, 0.702), 0px 0 40px 20px rgba(126, 126, 123, 0.702), 0px 0 50px 20px rgba(231, 202, 81, 0.7019607843)
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    body {
+        background-image: url(../home/background-home-tablet.jpg);
+    }
+
+    .custom-container {
+        padding: 300px 0px !important;
+    }
+
+
+}
+
+@media (max-width:767px) {
+    body {
+        background-image: url(../home/background-home-mobile.jpg);
+    }
+
+    .explore {
+
+        width: 150px;
+        height: 150px;
+
+    }
+
+    p {
+        width: auto;
+
+    }
+
+    .main-container {
+        padding: 0 0 120px 0 !important;
+    }
+
+    .tect-container {
+        padding: 0 0 80px 0 !important;
+    }
+
+
+
+
+}

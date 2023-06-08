@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Poppins:ital,wght@0,300;0,700;1,400&family=Public+Sans:wght@100;500;800;900&family=Roboto+Condensed&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Inter&family=Lato&family=Poppins:ital,wght@0,300;0,700;1,400&family=Public+Sans:wght@100;500;800;900&family=Roboto+Condensed&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.custom-container {
+    padding: 200px 166px 50px 166px;
+    color: #FFFFFF;
+    max-width: 1800px;
+
+}
+
+li {
+    list-style: none;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    cursor: pointer;
+
+}
+
+h1 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 172px;
+}
+
+h2 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 115px;
+}
+
+h3 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+    letter-spacing: 4.725px;
+}
+
+p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    color: #D0D6F9;
+
+}
+
+.navbar .container-fluid {
+    padding-right: 0;
+    padding-left: 55px;
+}
+
+.navbar-nav-custom {
+    position: relative;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+
+}
+
+.navbar-nav-custom::after {
+
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 55%;
+    bottom: 40px;
+    left: -50%;
+    background: #ffffff6c;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+
+
+.navbar-nav-custom a {
+    padding: 35px 0;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    top: calc(50% - 19px/2);
+}
+
+.nav-link:hover {
+    color: #FFFFFF !important;
+}
+
+header nav ul li {
+    position: relative;
+    transform: .5s;
+}
+
+
+header nav ul li.active-page :after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF !important;
+    background-color: white;
+
+}
+
+header nav ul li:hover::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF !important;
+    background-color: white;
+    transition: 0.5s;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    h3 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+}
+
+
+
+@media (max-width:767px) {
+    p {
+        font-size: 12px;
+    }
+
+    .navbar .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .navbar-nav-custom {
+        position: relative;
+        width: auto;
+
+    }
+
+
+
+    h1 {
+
+        font-size: 70px;
+        line-height: 70px;
+
+    }
+
+    h3 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    h5 {
+
+        font-size: 20px;
+        line-height: 10px;
+
+    }
+
+    .custom-container {
+        padding: 0 5px;
+
+    }
+
+    .navbar-toggler {
+        background-color: #FFFFFF !important;
+    }
+
+
+
+}
