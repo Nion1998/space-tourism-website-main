@@ -17,6 +17,10 @@ p {
     padding-bottom: 50px !important;
 }
 
+.space-text-div {
+    height: 70vh;
+
+}
 
 .explore {
     background: white;
